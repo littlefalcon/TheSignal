@@ -9,16 +9,16 @@
 
 ASpaceHorrorHUD::ASpaceHorrorHUD()
 {
-	// Set the crosshair texture
+	/*// Set the crosshair texture
 	static ConstructorHelpers::FObjectFinder<UTexture2D> CrosshairTexObj(TEXT("/Game/StaticContent/FirstPerson/Textures/FirstPersonCrosshair"));
 	CrosshairTex = CrosshairTexObj.Object;
-	bShowCrosshair = false;
+	bShowCrosshair = false;*/
 }
 
 
 void ASpaceHorrorHUD::DrawHUD()
 {
-	if (!bShowCrosshair) { return; }
+	/*if (!bShowCrosshair) { return; }
 	Super::DrawHUD();
 
 	// Draw very simple crosshair
@@ -33,5 +33,5 @@ void ASpaceHorrorHUD::DrawHUD()
 	// draw the crosshair
 	FCanvasTileItem TileItem( CrosshairDrawPosition, CrosshairTex->Resource, FLinearColor::White);
 	TileItem.BlendMode = SE_BLEND_Translucent;
-	Canvas->DrawItem( TileItem );
+	Canvas->DrawItem( TileItem );*/
 }
