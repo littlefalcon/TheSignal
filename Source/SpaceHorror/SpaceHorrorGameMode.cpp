@@ -9,8 +9,8 @@ ASpaceHorrorGameMode::ASpaceHorrorGameMode()
 	: Super()
 {
 	// set default pawn class to our Blueprinted character
-	static ConstructorHelpers::FClassFinder<APawn> PlayerPawnClassFinder(TEXT("/Game/StaticContent/FirstPerson/FirstPersonCPP/Blueprints/FirstPersonCharacter")); 
-	DefaultPawnClass = PlayerPawnClassFinder.Class;
+	static ConstructorHelpers::FClassFinder<APawn> PlayerPawnClassFinder(TEXT("/Game/DynamicContent/Additional/FirstPersonCharacter")); 
+	DefaultPawnClass = PlayerPawnClassFinder.Class;					//D:\Unreal_Learn\TheSignal\Content\DynamicContent\Additional
 
 	// use our custom HUD class
 	HUDClass = ASpaceHorrorHUD::StaticClass();
